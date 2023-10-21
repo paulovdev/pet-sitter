@@ -24,7 +24,7 @@ const ScrollTop = () => {
   return (
     <motion.div
       className="scroll-top"
-      initial={{ opacity: 0, x: 3000 }}
+      initial={{ opacity: 0, x: 1000 }}
       animate={{
         opacity: isVisible ? 1 : 0,
         x: isVisible ? 0 : 500,

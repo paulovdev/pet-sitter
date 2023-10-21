@@ -8,8 +8,8 @@ const About = () => {
         <p>
           Confie-nos o cuidado do seu animal de estimação quando você não pode
           estar presente. Nossos serviços de pet sitter garantem que seu animal
-          de estimação receba o amor e atenção de que precisa, no conforto de
-          seu próprio lar. De passeios relaxantes a alimentação, brincadeiras e
+          de estimação receba o amor e atenção de que precisa, COMO SE FOSSE no
+          conforto de seu próprio lar. De passeios relaxantes, brincadeiras e
           atenção personalizada, nossa equipe de pet sitters dedicados cuidará
           do seu amigo peludo com o mesmo carinho que você daria.
         </p>

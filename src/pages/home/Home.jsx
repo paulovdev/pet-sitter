@@ -5,14 +5,11 @@ const Home = () => {
     <>
       <section id="home">
         <main>
-          <h1>HOSPEDAGEM</h1>
-          <h2>PET SITTER</h2>
-          <p>SISTEMA HOTELZINHO E CRECHE</p>
+          <span>CÃO AMIGO</span>
+          <h1>Hospedagem Pet Sitter</h1>
+          <h2>SISTEMA HOTELZINHO E CRECHE</h2>
+          <img src="/scroll.gif" width={70} height={70} alt="" />
         </main>
-
-        <aside>
-          <img src="/Bollon.png" alt="" />
-        </aside>
       </section>
     </>
   );

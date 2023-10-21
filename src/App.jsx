@@ -8,7 +8,9 @@ import About from "./pages/about/About";
 import Features from "./pages/features/Features";
 import Gallery from "./pages/gallery/Gallery";
 import Nav from "./components/Nav/Nav";
+
 import ScrollTop from "./components/ScrollTop/ScrollTop";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const lenis = new Lenis();
@@ -22,12 +24,13 @@ const App = () => {
   gsap.ticker.lagSmoothing(0);
   return (
     <>
+      <ScrollTop />
       <Nav />
       <Home />
       <About />
       <Features />
       <Gallery />
-      <ScrollTop />
+      <Footer />
     </>
   );
 };

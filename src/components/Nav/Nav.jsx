@@ -14,9 +14,9 @@ const Nav = () => {
   };
 
   const menuItems = [
-    { target: "about", label: "Sobre nós" },
-    { target: "features", label: "Serviços" },
-    { target: "contact", label: "Contato" },
+    { target: "about", label: "Sobre nós", alt: "Ir para Sobre nós" },
+    { target: "features", label: "Serviços", alt: "Ir para Serviços" },
+    { target: "contact", label: "Contato", alt: "Ir para Contato" },
   ];
 
   return (
@@ -31,7 +31,7 @@ const Nav = () => {
         <ul className="desktop">
           {menuItems.map((item, index) => (
             <li key={index}>
-              <Link to={item.target} smooth={true}>
+              <Link to={item.target} smooth={true} title={item.alt}>
                 {item.label}
               </Link>
             </li>
@@ -41,7 +41,12 @@ const Nav = () => {
         <ul className={`mobile ${isOpen ? "open" : ""}`}>
           {menuItems.map((item, index) => (
             <li key={index}>
-              <Link to={item.target} smooth={true} onClick={closeMenu}>
+              <Link
+                to={item.target}
+                smooth={true}
+                title={item.alt}
+                onClick={closeMenu}
+              >
                 {item.label}
               </Link>
             </li>
