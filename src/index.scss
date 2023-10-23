@@ -163,10 +163,6 @@ header {
 
             text-align: end;
         }
-        img {
-            position: relative;
-            top: 80px;
-        }
     }
     aside {
         background-color: #ffffff;
@@ -184,28 +180,31 @@ header {
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1400px) {
+        main {
+            span {
+                top: 200px;
+                left: 20px;
+                font-size: 2.5rem;
+            }
+            h1 {
+                font-size: 5rem;
+            }
+        }
+    }
+    @media (max-width: 992px) {
         display: flex;
 
         main {
             margin: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            width: 100%;
             span {
-                position: absolute;
-                top: 170px;
-                left: 10px;
-                color: #d4f819;
-                font-size: 1.5rem;
-                font-weight: 800;
-                transform: rotate(-15deg);
+                top: 180px;
+                left: 20px;
+                font-size: 2.5rem;
             }
 
             h1 {
-                font-size: 2.5rem;
+                font-size: 3.5rem;
             }
 
             h2 {
@@ -216,6 +215,18 @@ header {
 
             img {
                 margin-bottom: 10%;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        main {
+            span {
+                top: 180px;
+                left: 20px;
+                font-size: 2rem;
+            }
+            h1 {
+                font-size: 4rem;
             }
         }
     }
@@ -298,6 +309,7 @@ header {
         justify-content: center;
         flex-direction: column;
         h1 {
+            text-align: center;
             font-size: 4rem;
             font-weight: 700;
             color: #ffffff;
@@ -311,6 +323,7 @@ header {
 
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 3rem;
             flex-wrap: wrap;
             .card {
@@ -340,14 +353,13 @@ header {
     }
 
     @media (max-width: 992px) {
+        padding: 1rem;
+        width: 100%;
         main {
             width: 100%;
             margin: 10px;
             h1 {
-                text-align: center;
                 font-size: 3rem;
-                font-weight: 700;
-                color: #ffffff;
             }
         }
     }
@@ -475,7 +487,7 @@ footer {
             margin-bottom: 2rem;
         }
         .field {
-            margin: 10px;
+            margin: 1px;
             flex-direction: column;
 
             .contact {
@@ -483,10 +495,10 @@ footer {
                 justify-content: center;
                 text-align: center;
                 p {
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                 }
                 a {
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                 }
 
                 .socials {
@@ -502,6 +514,6 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #5171ffe7;
+    background: rgba(223, 96, 140, 0.726);
     border-radius: 1px;
 }
